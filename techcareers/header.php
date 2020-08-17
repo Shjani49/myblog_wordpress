@@ -13,3 +13,14 @@
 </head>
 <body>
 <h1><?php bloginfo( 'title'); ?></h1>
+<nav>
+    <h2><?php bloginfo( 'title'); ?> Navigation </h2>
+    <?php
+    // Output the navigation ( list of anchors / links.)
+        wp_nav_menu(
+            array( // Ensure theme_location is defined so we can link this to a registered nav.
+                'theme_location' => 'main_menu'
+            )
+        );
+    ?>
+</nav>

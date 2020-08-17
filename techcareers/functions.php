@@ -1,5 +1,5 @@
 <?php 
-
+// Functions.php executes on each page load so as long as this theme is active
 /**
  * Enqueue theme stylesheet and scripts.
  */
@@ -20,3 +20,14 @@ add_action( 'wp_enqueue_scripts', function() {
         'all' // What sort of stylesheet (media query) is this?
     );
 } );
+
+/**
+ *  Register a navigation menu.
+ */
+register_nav_menus( // We must register navigation, so that WP knows about them!
+
+    array( // An Array of Menu "IDs" and "plain english names."Associative"
+        'main_menu' => 'Main Menu',
+        'footer_menu' => 'Footer Menu'
+    )
+);
