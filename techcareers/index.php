@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECHCareers</title>
-</head>
-<body>
-    <h1>Hello Shivani</h1>
-</body>
-</html>
+<?php 
+/**
+ * Thee get_header() function will grab and run our 'header.php' file for this theme.
+ */
+get_header();
+?>
+
+<p> Hello, World!</p>
+
+<?php 
+/**
+ * Thee get_footer() function will grab and run our 'footer.php' file for this theme.
+ */
+get_footer();
+?>
